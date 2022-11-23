@@ -15,9 +15,9 @@ import java.util.Optional;
 
 public class DriverManager {
 
-    private static final long IMPLICIT_WAIT_TIMEOUT = 30;
-    private static final long PAGE_LOAD_TIMEOUT = 30;
-    private static final String SELENOID_HUB = "http://192.168.1.100:4444/wd/hub";
+    private static final long IMPLICIT_WAIT_TIMEOUT = 50;
+    private static final long PAGE_LOAD_TIMEOUT = 50;
+    private static final String SELENOID_HUB = "http://192.168.1.105:4444/wd/hub";
     private static final String BROWSER = System.getProperty("browser", "chrome");
     public static ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
 
